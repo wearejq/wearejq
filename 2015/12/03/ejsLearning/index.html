@@ -3,18 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>小米前端面试，第一面 | We are JQ</title>
+  <title>ejs的学习 | We are JQ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1 用过什么预编译， less有什么特性2 H5首先存储， 还有什么特性localStorage cookie seesionStorage3 为什么语义化， 怎么语义化，有什么好处4 内存泄露，闭包如何释放5 优化，如何优化6 用户体验7 两列布局8 继承， 原型链图">
+  <meta name="description" content="表明目标：我要自己写一个hexo主题用hexo建博客也有一段时间了，用的是别人的主题，总觉得很不爽，因此励志做一个自己的主题。hexo采用的ejs模板引擎，然后嘞，道路总是曲折的，学一下ejs啦~~~Ps：今天重新由npm到hexo上传git整个流程走了一遍，详见我的文章：hexo使用安装教程
+快速入门js模板引擎更深的考虑">
 <meta property="og:type" content="article">
-<meta property="og:title" content="小米前端面试，第一面">
-<meta property="og:url" content="http://yoursite.com/2015/10/26/xiaoMi/index.html">
+<meta property="og:title" content="ejs的学习">
+<meta property="og:url" content="http://yoursite.com/2015/12/03/ejsLearning/index.html">
 <meta property="og:site_name" content="We are JQ">
-<meta property="og:description" content="1 用过什么预编译， less有什么特性2 H5首先存储， 还有什么特性localStorage cookie seesionStorage3 为什么语义化， 怎么语义化，有什么好处4 内存泄露，闭包如何释放5 优化，如何优化6 用户体验7 两列布局8 继承， 原型链图">
-<meta property="og:updated_time" content="2015-10-26T08:45:43.000Z">
+<meta property="og:description" content="表明目标：我要自己写一个hexo主题用hexo建博客也有一段时间了，用的是别人的主题，总觉得很不爽，因此励志做一个自己的主题。hexo采用的ejs模板引擎，然后嘞，道路总是曲折的，学一下ejs啦~~~Ps：今天重新由npm到hexo上传git整个流程走了一遍，详见我的文章：hexo使用安装教程
+快速入门js模板引擎更深的考虑">
+<meta property="og:updated_time" content="2015-12-03T12:26:35.379Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小米前端面试，第一面">
-<meta name="twitter:description" content="1 用过什么预编译， less有什么特性2 H5首先存储， 还有什么特性localStorage cookie seesionStorage3 为什么语义化， 怎么语义化，有什么好处4 内存泄露，闭包如何释放5 优化，如何优化6 用户体验7 两列布局8 继承， 原型链图">
+<meta name="twitter:title" content="ejs的学习">
+<meta name="twitter:description" content="表明目标：我要自己写一个hexo主题用hexo建博客也有一段时间了，用的是别人的主题，总觉得很不爽，因此励志做一个自己的主题。hexo采用的ejs模板引擎，然后嘞，道路总是曲折的，学一下ejs啦~~~Ps：今天重新由npm到hexo上传git整个流程走了一遍，详见我的文章：hexo使用安装教程
+快速入门js模板引擎更深的考虑">
   
   
     <link rel="icon" href="/favicon.png">
@@ -189,11 +192,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-xiaoMi" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-ejsLearning" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/10/26/xiaoMi/" class="article-date">
-  	<time datetime="2015-10-26T11:18:00.000Z" itemprop="datePublished">2015-10-26</time>
+      <a href="/2015/12/03/ejsLearning/" class="article-date">
+  	<time datetime="2015-12-03T11:38:30.000Z" itemprop="datePublished">2015-12-03</time>
 </a>
     </div>
   
@@ -206,7 +209,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      小米前端面试，第一面
+      ejs的学习
     </h1>
   
 
@@ -221,7 +224,7 @@
 
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/面试/">面试</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ejs/">-ejs</a></li></ul>
 	</div>
 
         <div class="clearfix"></div>
@@ -230,8 +233,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1 用过什么预编译， less有什么特性<br>2 H5首先存储， 还有什么特性<br>localStorage cookie seesionStorage<br>3 为什么语义化， 怎么语义化，有什么好处<br>4 内存泄露，闭包如何释放<br>5 优化，如何优化<br>6 用户体验<br>7 两列布局<br>8 继承， 原型链图</p>
-
+        <h3 id="表明目标：我要自己写一个hexo主题">表明目标：我要自己写一个hexo主题</h3><p>用hexo建博客也有一段时间了，用的是别人的主题，总觉得很不爽，因此励志做一个自己的主题。hexo采用的ejs模板引擎，然后嘞，道路总是曲折的，学一下ejs啦~~~<br>Ps：今天重新由npm到hexo上传git整个流程走了一遍，详见我的文章：<a href="http://wearejq.github.io/2015/12/3/newHexo/index.html" target="_blank" rel="external">hexo使用安装教程</a></p>
+<h3 id="快速入门">快速入门</h3><h3 id="js模板引擎">js模板引擎</h3><h3 id="更深的考虑">更深的考虑</h3>
       
       
     </div>
@@ -243,7 +246,7 @@
 <!-- Show TOC and tocButton in default, Hide TOC via putting "toc: false" before "---" at [post].md -->
 <div id="toc" class="toc-article">
 <strong class="toc-title">文章目录</strong>
-
+<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#表明目标：我要自己写一个hexo主题"><span class="toc-number">1.</span> <span class="toc-text">表明目标：我要自己写一个hexo主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#快速入门"><span class="toc-number">2.</span> <span class="toc-text">快速入门</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#js模板引擎"><span class="toc-number">3.</span> <span class="toc-text">js模板引擎</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更深的考虑"><span class="toc-number">4.</span> <span class="toc-text">更深的考虑</span></a></li></ol>
 </div>
 <style type="text/css">
   .left-col .switch-btn {
@@ -297,16 +300,14 @@
 
   
   
-    
     <div  class="post-nav-button">
-    <a href="/2015/10/26/storeLeak/" title="上一篇: js中有哪些内存泄露？我们如何解决呢？">
-    <i class="fa fa-angle-left"></i>
-    </a>
-    <a href="/2015/07/30/lessStart/" title="下一篇: 初识less">
+    <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+    <a href="/2015/12/03/newHexo/" title="下一篇: hexo使用安装教程">
     <i class="fa fa-angle-right"></i>
     </a>
     </div>
   
+    
 </div>
       <footer id="footer">
   <div class="outer">
