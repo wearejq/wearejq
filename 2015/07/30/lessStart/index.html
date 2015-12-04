@@ -5,19 +5,16 @@
   
   <title>初识less | We are JQ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="less是什么？一种动态样式语言.LESS 将 CSS 赋予了动态语言的特性，如 变量， 继承， 运算， 函数. LESS 既可以在客户端上运行 (支持IE 6+, Webkit, Firefox)，也可以借助Node.js或者Rhino在服务端运行。
-之前我们是针对样式， 直接写css， 很多颜色， 字体等重复， 我们也只能尽量整合， 因此很多并不认为css是一个语言， 因为是固定的。 那么le">
+  <meta name="description" content="半年瞎忙活了，就找到了一只手的工作，算是安稳了，内心还是很纠结，里面有两个小人，黑人说去互联网吧，年轻，总要努力奋斗吧，你甘心在一个国企里，没有技术大牛可仰慕，没有潮流技术追赶，天天碌碌无为，有什么意思？白人在说，女孩子家家的，当什么码农，加班多压力大，而且还要嫁人照顾家庭，现在不是很好嘛，待遇不错，很清闲，没事的时候可以搞些副业神马的。啊，神啊，人生怎么过才能有意义，是努力奋斗？还是尽情享受？奋">
 <meta property="og:type" content="article">
 <meta property="og:title" content="初识less">
 <meta property="og:url" content="http://yoursite.com/2015/07/30/lessStart/index.html">
 <meta property="og:site_name" content="We are JQ">
-<meta property="og:description" content="less是什么？一种动态样式语言.LESS 将 CSS 赋予了动态语言的特性，如 变量， 继承， 运算， 函数. LESS 既可以在客户端上运行 (支持IE 6+, Webkit, Firefox)，也可以借助Node.js或者Rhino在服务端运行。
-之前我们是针对样式， 直接写css， 很多颜色， 字体等重复， 我们也只能尽量整合， 因此很多并不认为css是一个语言， 因为是固定的。 那么le">
-<meta property="og:updated_time" content="2015-08-01T12:05:11.000Z">
+<meta property="og:description" content="半年瞎忙活了，就找到了一只手的工作，算是安稳了，内心还是很纠结，里面有两个小人，黑人说去互联网吧，年轻，总要努力奋斗吧，你甘心在一个国企里，没有技术大牛可仰慕，没有潮流技术追赶，天天碌碌无为，有什么意思？白人在说，女孩子家家的，当什么码农，加班多压力大，而且还要嫁人照顾家庭，现在不是很好嘛，待遇不错，很清闲，没事的时候可以搞些副业神马的。啊，神啊，人生怎么过才能有意义，是努力奋斗？还是尽情享受？奋">
+<meta property="og:updated_time" content="2015-12-03T13:30:11.666Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="初识less">
-<meta name="twitter:description" content="less是什么？一种动态样式语言.LESS 将 CSS 赋予了动态语言的特性，如 变量， 继承， 运算， 函数. LESS 既可以在客户端上运行 (支持IE 6+, Webkit, Firefox)，也可以借助Node.js或者Rhino在服务端运行。
-之前我们是针对样式， 直接写css， 很多颜色， 字体等重复， 我们也只能尽量整合， 因此很多并不认为css是一个语言， 因为是固定的。 那么le">
+<meta name="twitter:description" content="半年瞎忙活了，就找到了一只手的工作，算是安稳了，内心还是很纠结，里面有两个小人，黑人说去互联网吧，年轻，总要努力奋斗吧，你甘心在一个国企里，没有技术大牛可仰慕，没有潮流技术追赶，天天碌碌无为，有什么意思？白人在说，女孩子家家的，当什么码农，加班多压力大，而且还要嫁人照顾家庭，现在不是很好嘛，待遇不错，很清闲，没事的时候可以搞些副业神马的。啊，神啊，人生怎么过才能有意义，是努力奋斗？还是尽情享受？奋">
   
   
     <link rel="icon" href="/favicon.png">
@@ -233,7 +230,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="less是什么？"><a href="http://www.bootcss.com/p/lesscss/" target="_blank" rel="external">less是什么？</a></h3><p>一种<strong>动态</strong>样式语言.<br>LESS 将 CSS 赋予了动态语言的特性，如 变量， 继承， 运算， 函数. LESS 既可以在客户端上运行 (支持IE 6+, Webkit, Firefox)，也可以借助Node.js或者Rhino在服务端运行。</p>
+        <p>半年瞎忙活了，就找到了一只手的工作，算是安稳了，内心还是很纠结，里面有两个小人，黑人说去互联网吧，年轻，总要努力奋斗吧，你甘心在一个国企里，没有技术大牛可仰慕，没有潮流技术追赶，天天碌碌无为，有什么意思？白人在说，女孩子家家的，当什么码农，加班多压力大，而且还要嫁人照顾家庭，现在不是很好嘛，待遇不错，很清闲，没事的时候可以搞些副业神马的。啊，神啊，人生怎么过才能有意义，是努力奋斗？还是尽情享受？奋斗成功留名的也就那几个人，享受生活的就敢于平庸吗？什么是有意义，头疼~~~~吐槽一下，然后决定即使周围人不关心技术，我还是要继续学习！！重拾半年前的博客，电脑重装后由npm到github上传都走了一遍，不熟的人都来看看撒，说不定有帮助。</p>
+<h3 id="less是什么？"><a href="http://www.bootcss.com/p/lesscss/" target="_blank" rel="external">less是什么？</a></h3><p>一种<strong>动态</strong>样式语言.<br>LESS 将 CSS 赋予了动态语言的特性，如 变量， 继承， 运算， 函数. LESS 既可以在客户端上运行 (支持IE 6+, Webkit, Firefox)，也可以借助Node.js或者Rhino在服务端运行。</p>
 <p>之前我们是针对样式， 直接写css， 很多颜色， 字体等重复， 我们也只能尽量整合， 因此很多并不认为css是一个语言， 因为是固定的。 那么less让css变的更像语言了。</p>
 <h3 id="为什么会有less？"><a href="http://www.zhihu.com/question/20259365" target="_blank" rel="external">为什么会有less？</a></h3><ol>
 <li>通用组件， 例如各种内核都兼容的圆角效果或者下三角形，这种组件生成的CSS效果都是一样的，如果每个用到的都复制一份代码， 这样子代码复用性就会很差。 这样子我们可以想一下代码复用常用的模块~， 我们为何不把这个组件封装起来， 然后在调用？ 就像bootstrap等各种框架内， 把常用的组件写死， 我们只要设置label或者class就行了。</li>
@@ -314,7 +312,7 @@
   
     
     <div  class="post-nav-button">
-    <a href="/2015/10/26/xiaoMi/" title="上一篇: 小米前端面试，第一面">
+    <a href="/2015/10/26/storeLeak/" title="上一篇: js中有哪些内存泄露？我们如何解决呢？">
     <i class="fa fa-angle-left"></i>
     </a>
     <a href="/2015/07/30/enchanted/" title="下一篇: Enchanted by Taylor">
