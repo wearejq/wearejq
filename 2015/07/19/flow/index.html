@@ -15,16 +15,16 @@ Normal flow. In CSS 2.1, normal flow includes block formatting of block-level bo
 <meta property="og:description" content="先引用一段W3C的文档：9.3 Positioning schemesIn CSS 2.1, a box may be laid out according to three positioning schemes:
 
 Normal flow. In CSS 2.1, normal flow includes block formatting of block-level boxes, inlin">
-<meta property="og:image" content="http://yoursite.com/./img/flow/usual1.jpg">
-<meta property="og:image" content="http://yoursite.com/./img/flow/usual2.jpg">
-<meta property="og:image" content="http://yoursite.com/./img/flow/usual3.jpg">
-<meta property="og:image" content="http://yoursite.com/./img/flow/float1.jpg">
-<meta property="og:image" content="http://yoursite.com/./img/flow/float2.jpg">
-<meta property="og:image" content="http://yoursite.com/./img/flow/float3.jpg">
-<meta property="og:image" content="http://yoursite.com/./img/flow/position1.jpg">
-<meta property="og:image" content="http://yoursite.com/./img/flow/position2.jpg">
-<meta property="og:image" content="http://yoursite.com/./img/flow/position3.jpg">
-<meta property="og:updated_time" content="2015-07-19T11:23:51.000Z">
+<meta property="og:image" content="http://wearejq.github.io/img/flow/usual1.jpg">
+<meta property="og:image" content="http://wearejq.github.io/img/flow/usual2.jpg">
+<meta property="og:image" content="http://wearejq.github.io/img/flow/usual3.jpg">
+<meta property="og:image" content="http://wearejq.github.io/img/flow/float1.jpg">
+<meta property="og:image" content="http://wearejq.github.io/img/flow/float2.jpg">
+<meta property="og:image" content="http://wearejq.github.io/img/flow/float3.jpg">
+<meta property="og:image" content="http://wearejq.github.io/img/flow/position1.jpg">
+<meta property="og:image" content="http://wearejq.github.io/img/flow/position2.jpg">
+<meta property="og:image" content="http://wearejq.github.io/img/flow/position3.jpg">
+<meta property="og:updated_time" content="2015-12-11T14:19:59.877Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="什么是脱离文档流？有哪些？">
 <meta name="twitter:description" content="先引用一段W3C的文档：9.3 Positioning schemesIn CSS 2.1, a box may be laid out according to three positioning schemes:
@@ -132,7 +132,7 @@ Normal flow. In CSS 2.1, normal flow includes block formatting of block-level bo
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/ejs/" style="font-size: 10px;">-ejs</a> <a href="/tags/hexo/" style="font-size: 10px;">-hexo</a> <a href="/tags/markdown/" style="font-size: 10px;">-markdown</a> <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/js/" style="font-size: 15px;">js</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/开始/" style="font-size: 10px;">开始</a> <a href="/tags/霉霉/" style="font-size: 15px;">霉霉</a> <a href="/tags/面试/" style="font-size: 10px;">面试</a>
+						<a href="/tags/ejs/" style="font-size: 10px;">-ejs</a> <a href="/tags/hexo/" style="font-size: 10px;">-hexo</a> <a href="/tags/markdown/" style="font-size: 10px;">-markdown</a> <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/js/" style="font-size: 15px;">js</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/开始/" style="font-size: 10px;">开始</a> <a href="/tags/霉霉/" style="font-size: 15px;">霉霉</a> <a href="/tags/面试/" style="font-size: 10px;">面试</a>
 					</div>
 				</section>
 				
@@ -272,9 +272,9 @@ Normal flow. In CSS 2.1, normal flow includes block formatting of block-level bo
     background-color: cyan;
     padding: <span class="number">10</span>px;}
 </code></pre>
-<p>###normal flow 正常文档流<br>要被玩的div：<br>跟在后面的h2：<br>可以看到两者是垂直排列，padding互相顶着。3D视图的话就是这样，大家排排坐：<br><img src="./img/flow/usual1.jpg" alt="normal"><br><img src="./img/flow/usual2.jpg" alt="normal"><br><img src="./img/flow/usual3.jpg" alt="normal"></p>
-<h3 id="浮动">浮动</h3><p>加上float:left了之后，蓝色的div就脱离文档流了，变成了这样：<br>因为蓝色的div脱离了文档流，跟在后面的h2和p的盒子都当做没看到这个div的样子去定位，所以他们都顶着浏览器左边和顶部的边框。但是有趣的是，h2和p里面的文本（属于content flow）却都看到了这个被float的div，在自己的盒子里往右推，飘到了蓝色div的边上。这就是float的特性，其他盒子看不见被float的元素，但是其他盒子里的文本看得见。<br>3D视图的话就是这样。<br><img src="./img/flow/float1.jpg" alt="float"><br><img src="./img/flow/float2.jpg" alt="float"><br><img src="./img/flow/float3.jpg" alt="float"><br>为什么能插呢？因为蓝色div被旁边的盒子无视了呀~</p>
-<h3 id="absolute_positioning。">absolute positioning。</h3><p>删掉float: left，加上postion: absolute。和float一样的是，旁边的盒子无视了蓝色div的存在，也是顶着左边边框定位。但是~ 文本也无视了蓝色div的存在，顶着左边边框定位！<br>3D视图下也是成功无视之，插入~<br><img src="./img/flow/position1.jpg" alt="position"><br><img src="./img/flow/position2.jpg" alt="position"><br><img src="./img/flow/position3.jpg" alt="position"><br>总结：<br>脱离文档流，也就是将元素从普通的布局排版中拿走，其他盒子在定位的时候，会当做脱离文档流的元素不存在而进行定位。需要注意的是，使用float脱离文档流时，其他盒子会无视这个元素，但其他盒子内的文本依然会为这个元素让出位置，环绕在周围。而对于使用absolute positioning脱离文档流的元素，其他盒子与其他盒子内的文本都会无视它。</p>
+<p>###normal flow 正常文档流<br>要被玩的div：<br>跟在后面的h2：<br>可以看到两者是垂直排列，padding互相顶着。3D视图的话就是这样，大家排排坐：<br><img src="http://wearejq.github.io/img/flow/usual1.jpg" alt="normal"><br><img src="http://wearejq.github.io/img/flow/usual2.jpg" alt="normal"><br><img src="http://wearejq.github.io/img/flow/usual3.jpg" alt="normal"></p>
+<h3 id="浮动">浮动</h3><p>加上float:left了之后，蓝色的div就脱离文档流了，变成了这样：<br>因为蓝色的div脱离了文档流，跟在后面的h2和p的盒子都当做没看到这个div的样子去定位，所以他们都顶着浏览器左边和顶部的边框。但是有趣的是，h2和p里面的文本（属于content flow）却都看到了这个被float的div，在自己的盒子里往右推，飘到了蓝色div的边上。这就是float的特性，其他盒子看不见被float的元素，但是其他盒子里的文本看得见。<br>3D视图的话就是这样。<br><img src="http://wearejq.github.io/img/flow/float1.jpg" alt="float"><br><img src="http://wearejq.github.io/img/flow/float2.jpg" alt="float"><br><img src="http://wearejq.github.io/img/flow/float3.jpg" alt="float"><br>为什么能插呢？因为蓝色div被旁边的盒子无视了呀~</p>
+<h3 id="absolute_positioning。">absolute positioning。</h3><p>删掉float: left，加上postion: absolute。和float一样的是，旁边的盒子无视了蓝色div的存在，也是顶着左边边框定位。但是~ 文本也无视了蓝色div的存在，顶着左边边框定位！<br>3D视图下也是成功无视之，插入~<br><img src="http://wearejq.github.io/img/flow/position1.jpg" alt="position"><br><img src="http://wearejq.github.io/img/flow/position2.jpg" alt="position"><br><img src="http://wearejq.github.io/img/flow/position3.jpg" alt="position"><br>总结：<br>脱离文档流，也就是将元素从普通的布局排版中拿走，其他盒子在定位的时候，会当做脱离文档流的元素不存在而进行定位。需要注意的是，使用float脱离文档流时，其他盒子会无视这个元素，但其他盒子内的文本依然会为这个元素让出位置，环绕在周围。而对于使用absolute positioning脱离文档流的元素，其他盒子与其他盒子内的文本都会无视它。</p>
 
       
       
